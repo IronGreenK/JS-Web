@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    </head>
+    <body>       
+        <div class="grid-container">
+          <div class="shop col-sm-12">
+            <h2>Compra de consolas retro</h2>
+            <div class="shop-container" id="items">
+            </div>
+          </div>  
+          <div class="shopping-cart">
+            <div id="login-error-msg-holder">
+              <p id="login-error-msg">Invalido el nombre <span id="error-msg-second-line">y/or contraseña</span></p>
+            </div>
+            <div id="form-login" class="form-group enable">
+               <form novalidate id="form" action="">
+                   <h3>Inicio Sesión</h3>
+                   <input type="text" id="username" placeholder="Nombre" class="form-control">
+                   <input type="text" id="password" placeholder="Contraseña" class="form-control">
+                   <button id="button-search" class="btn btn-success">Iniciar Sesión</button>
+               </form> 
+            </div>
+            <div id="log" class="log disable">
+              <h3>Buenas, usuario: <span id="mostrar"></span> </h3>
+            </div>
+            <div class="shop-cart">
+              <h2>Carrito</h2>
+              <ul id="carrito" class="list-group"></ul>
+              <hr>
+              <p class="text-right">Total: &dollar;<span id="total"></span></p>
+            </div>
+            <button class="btn btn-success buy" disabled id="boton-buy">Realizar compra</button>
+            <div class="reset">
+                <h4>Credenciales</h4>
+                <p>Usuario: admin</p>
+                <p>Contraseña: pass</p>
+                <button class="btn btn-warning" type="reset" onclick="cleanAll()">Reiniciar todo</button>
+            </div>
+          </div>
+          <div class="footer">
+            <h3>&copy Creado por Kevin Araneda</h3>
+            <div id="progressbar"></div>
+          </div>
+        </div>
+    
+    
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
